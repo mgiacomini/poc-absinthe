@@ -42,7 +42,8 @@ defmodule ApiGraphql.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:absinthe_plug, "~> 1.1"},
-      {:poison, "~> 3.0.0"}
+      {:poison, "~> 3.0.0"},
+      {:faker, "~> 0.9"}
     ]
   end
 
