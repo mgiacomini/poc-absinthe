@@ -26,5 +26,11 @@ defmodule ApiGraphqlWeb.Schema do
 
       resolve &PortfolioResolver.create/2
     end
+
+    field :delete_portfolio, type: :portfolio do
+      arg :id, non_null(:integer)
+
+      resolve &PortfolioResolver.delete/2
+    end
   end
 end

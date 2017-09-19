@@ -17,4 +17,9 @@ defmodule ApiGraphqlWeb.PortfolioResolver do
     |> Portfolio.changeset(args)
     |> Repo.insert
   end
+
+  def delete(%{id: id}, _info) do
+    Repo.get!(Portfolio, id)
+    |> Repo.delete()
+  end
 end
