@@ -9,6 +9,18 @@ To start your Phoenix server:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
+## Graphql queries
+You can test graphql schemas and queries in [`localhost:4000/graphiql`](http://localhost:4000/graphiql)
+
+As graphql query example:
+```
+{
+  portfolios {
+    name
+  }
+}
+```
+
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
 
 ## Learn more
