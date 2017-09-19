@@ -12,11 +12,39 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 ## Graphql queries
 You can test graphql schemas and queries in [`localhost:4000/graphiql`](http://localhost:4000/graphiql)
 
-As graphql query example:
+List all portfolios:
 ```
 {
   portfolios {
     name
+  }
+}
+```
+
+Create new portfolio:
+```
+mutation CreatePortfolio {
+  create_portfolio(name: "testing") {
+    id
+  }
+}
+```
+
+Update a portfolio:
+```
+mutation UpdatePortfolio {
+  update_portfolio(id: 1, portfolio: {name: "My Updated Post Title"}) {
+    id,
+    name
+  }
+}
+```
+
+Delete a portfolio:
+```
+mutation DeletePortfolio {
+  delete_portfolio(id: 1) {
+    id
   }
 }
 ```
