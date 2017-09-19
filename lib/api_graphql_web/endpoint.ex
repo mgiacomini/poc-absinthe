@@ -27,6 +27,9 @@ defmodule ApiGraphqlWeb.Endpoint do
     pass: ["*/*"],
     json_decoder: Poison
 
+    #plug Absinthe.Plug,
+    #schema: ApiGraphql.Schema
+
   plug Plug.MethodOverride
   plug Plug.Head
 
