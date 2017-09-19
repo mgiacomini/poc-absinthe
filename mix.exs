@@ -44,7 +44,9 @@ defmodule ApiGraphql.Mixfile do
       {:absinthe_plug, "~> 1.1"},
       {:poison, "~> 3.0.0"},
       {:faker, "~> 0.9"},
-      {:credo, "~> 0.8.6"}
+      {:credo, "~> 0.8.6"},
+      {:comeonin, "~> 4.0"},
+      {:guardian, "~> 0.14.5"}
     ]
   end
 
